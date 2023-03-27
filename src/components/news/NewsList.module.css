@@ -1,0 +1,58 @@
+.newsList {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 0;
+}
+
+.actions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	gap: 1rem;
+	margin-top: 1rem;
+	text-align: center;
+	width: 95%;
+}
+
+.actions a,
+.actions button {
+	width: 100%;
+	font: inherit;
+	text-decoration: none;
+	border: 2px solid var(--color-green-700);
+	background-color: var(--color-green-700);
+	padding: 0.5rem 2rem;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.actions a:hover,
+.actions button:hover {
+	background-color: #fff;
+	border: 2px solid var(--color-green-700);
+	color: #000;
+}
+
+@media screen and (min-width: 768px) {
+	.newsList {
+		gap: 0.5rem;
+		margin: 0 1rem;
+		align-items: flex-start;
+	}
+	.actions {
+		flex-direction: row;
+		width: 80%;
+	}
+
+	.actions a,
+	.actions button {
+		width: 70%;
+		padding: 0.5rem 7rem;
+	}
+}

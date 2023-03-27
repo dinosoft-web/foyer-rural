@@ -1,0 +1,108 @@
+h2 {
+	margin: 0;
+}
+
+.form {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.form p {
+	margin: 0;
+}
+
+.id {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+}
+
+.input {
+	display: block;
+	width: 60%;
+}
+
+.input input {
+	width: 100%;
+}
+
+.checkbox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 30%;
+	margin: 0;
+	text-align: center;
+}
+
+.id input[type='checkbox'] {
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-align: start;
+	align-self: center;
+}
+
+.form label {
+	display: block;
+	width: 100%;
+}
+
+.form input {
+	font: inherit;
+	padding: 0.25rem;
+}
+
+.actions {
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
+}
+
+.actions button {
+	font: inherit;
+	cursor: pointer;
+	width: 10rem;
+	padding: 0.5rem 0;
+	border-radius: 4px;
+	background-color: var(--color-green-700);
+	border: 2px solid var(--color-green-700);
+	color: #fff;
+}
+
+.actions button[type='button'] {
+	background-color: var(--color-gray-400);
+	border-color: var(--color-gray-400);
+}
+
+.image {
+	width: 100%;
+	text-align: start;
+}
+
+.file::-webkit-file-upload-button {
+	font: inherit;
+	cursor: pointer;
+	width: 10rem;
+	padding: 0.25rem 0;
+	border-radius: 4px;
+	background-color: var(--color-green-700);
+	border: 2px solid var(--color-green-700);
+	color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+	.form {
+		max-width: 45rem;
+		width: 40rem;
+		height: 65vh;
+		gap: 0.5rem;
+	}
+}

@@ -1,0 +1,39 @@
+.event {
+	min-width: 16rem;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin: 0 0 1rem 0;
+}
+
+.type {
+	font: inherit;
+	font-size: 1.2 rem;
+	text-align: start;
+	text-transform: uppercase;
+	margin: 0 0 0.5rem 0;
+}
+
+.details {
+	margin: 0;
+	font-style: italic;
+	color: var(--color-gray-500);
+}
+
+.location {
+	margin: 0;
+	font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+	.event {
+		min-width: 20rem;
+	}
+
+	.title {
+		font-size: 1.5rem;
+	}
+}

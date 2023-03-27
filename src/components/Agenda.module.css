@@ -1,0 +1,17 @@
+.events {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.events a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+	.events {
+		flex-direction: row;
+	}
+}

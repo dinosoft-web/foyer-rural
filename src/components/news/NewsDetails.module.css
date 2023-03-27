@@ -1,0 +1,92 @@
+.container {
+	width: 18.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2.2rem;
+	margin: 0;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 15/4;
+	background-position: center;
+	background-size: cover;
+	border-radius: 6px;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	width: 100%;
+}
+
+.text > * {
+	margin: 0;
+}
+
+.text p {
+	width: 100%;
+	text-align: justify;
+	white-space: pre-wrap;
+}
+
+.titleContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.title > * {
+	margin: 0;
+}
+
+.title h2 {
+	font-size: 1.7rem;
+}
+
+.title p {
+	font-style: italic;
+	font-size: 0.9rem;
+	margin: 0;
+
+	color: var(--color-gray-400);
+}
+
+.buttons {
+	display: flex;
+	gap: 1rem;
+}
+
+.buttons > * {
+	cursor: pointer;
+}
+
+.actions a {
+	text-decoration: none;
+	border: 2px solid var(--color-green-700);
+	background-color: var(--color-green-700);
+	padding: 0.5rem 4rem;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.actions a:hover {
+	background-color: #fff;
+	border: 2px solid var(--color-green-700);
+	color: #000;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 60rem;
+	}
+}

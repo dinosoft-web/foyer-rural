@@ -1,0 +1,103 @@
+.buttons {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	display: flex;
+	gap: 1rem;
+}
+
+.eventContainer {
+	height: 70vh;
+	max-width: 18.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	gap: 4rem;
+}
+
+.eventContainer p {
+	text-align: center;
+}
+
+.eventContainer a {
+	text-decoration: none;
+	border: 2px solid var(--color-green-700);
+	background-color: var(--color-green-700);
+	padding: 0.5rem 8em;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.eventContainer a:hover {
+	background-color: #fff;
+	border: 2px solid var(--color-green-700);
+	color: #000;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.text > a {
+	padding: 0.5rem 6rem;
+	text-align: center;
+	background-color: var(--color-gray-400);
+	border: 2px solid var(--color-gray-400);
+	border-radius: 6px;
+}
+
+.text > a:hover {
+	border: 2px solid var(--color-gray-400);
+	color: var(--color-gray-400);
+}
+
+.text > p {
+	white-space: pre-wrap;
+}
+
+.detailsContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.detailsContainer > * {
+	margin: 0;
+}
+
+.detailsContainer h3 {
+	text-transform: uppercase;
+}
+
+.detailsContainer p:nth-child(3) {
+	font-style: italic;
+}
+
+.delete {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+	.eventContainer {
+		height: 65vh;
+		max-width: 40rem;
+	}
+
+	.eventContainer > a {
+		padding: 0.5rem 16rem;
+	}
+
+	.text > a {
+		width: 70%;
+		align-self: center;
+	}
+}

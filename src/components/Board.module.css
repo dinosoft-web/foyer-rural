@@ -1,0 +1,97 @@
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin: 0 auto;
+}
+
+.boardContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.margin {
+	margin: 0;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16/10;
+	background-position: center;
+	background-size: cover;
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+.boardList {
+	width: 100%;
+	text-align: start;
+	font-size: 0.9rem;
+}
+
+.boardList h2 {
+	text-align: end;
+	margin-bottom: 1rem;
+}
+
+.boardList ul {
+	line-height: 28px;
+}
+
+.mapContainer {
+	width: 100%;
+}
+
+.mapContainer h2 {
+	margin-bottom: 1rem;
+	text-align: start;
+}
+
+.mapContainer .img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4/3;
+	background-image: url('../assets/img/carte.png');
+	background-position: center;
+	background-size: cover;
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-end;
+		gap: 2rem;
+		margin: 0 auto;
+	}
+
+	.boardContainer {
+		display: flex;
+		width: 45rem;
+		flex-direction: row;
+	}
+
+	.img {
+		width: 50%;
+	}
+
+	.boardList {
+		width: 50%;
+		text-align: end;
+	}
+
+	.mapContainer {
+		width: 35rem;
+	}
+
+	.mapContainer .img {
+		width: 85%;
+	}
+}

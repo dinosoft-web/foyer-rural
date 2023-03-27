@@ -1,0 +1,71 @@
+.infos {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	margin: 1rem 0;
+}
+
+.infos h1 {
+	margin-bottom: 1rem;
+	line-height: 38px;
+	text-align: center;
+}
+
+.text {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.description {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1.5rem;
+}
+
+.description p {
+	margin: 0;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 18/10;
+	background-image: url('../assets/img/église.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+	.infos {
+		align-items: flex-start;
+	}
+
+	.infos h1 {
+		text-align: start;
+	}
+
+	.text {
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.description {
+		width: 55%;
+		gap: 1rem;
+	}
+
+	.img {
+		width: 37%;
+	}
+}
